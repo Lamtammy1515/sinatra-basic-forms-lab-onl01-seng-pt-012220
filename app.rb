@@ -7,7 +7,7 @@ get '/' do
 end 
 
 get '/new' do 
-erb :create_puppu
+erb :create_puppy
 end 
   
 post '/puppy' do 
