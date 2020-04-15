@@ -7,6 +7,9 @@ get '/' do
 end 
 
 get '/new' do 
+  
+  
+post '/puppy' do 
   @puppy = Puppy.new 
   @puppy.name = params[:name]
   @puppy.breed = params[:breed]
