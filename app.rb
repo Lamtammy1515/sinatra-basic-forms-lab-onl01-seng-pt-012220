@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
 get '/' do 
-  erb :display_puppy
+  erb :index
 end 
 
 get '/new' do 
