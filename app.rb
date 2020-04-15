@@ -7,7 +7,8 @@ get '/' do
 end 
 
 get '/new' do 
-  
+erb :create_puppu
+end 
   
 post '/puppy' do 
   @puppy = Puppy.new 
@@ -15,6 +16,7 @@ post '/puppy' do
   @puppy.breed = params[:breed]
   @puppy.age = params[:age]
   
-  erb :create_puppy
+  erb :display_puppy
 end 
+
 end
