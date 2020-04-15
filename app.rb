@@ -13,4 +13,5 @@ post '/create_puppy' do
   @puppy.age = params[:age]
   
   erb :create_puppy
+end 
 end
