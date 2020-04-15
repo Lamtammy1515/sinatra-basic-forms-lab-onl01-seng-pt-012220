@@ -6,7 +6,7 @@ get '/' do
   erb :display_puppy
 end 
 
-post '/create_puppy' do 
+get '/new' do 
   @puppy = Puppy.new 
   @puppy.name = params[:name]
   @puppy.breed = params[:breed]
